@@ -1,0 +1,38 @@
+- name: {{info.name}}
+  type: table
+  desc: {{info.description}}
+
+  members:
+
+{{#paths}}
+
+  - name: {{operationId}}
+    type: function
+    desc: {{summary}}
+    parameters:
+{{#parameters}}
+      - name: {{name}} {{#required}}(REQUIRED){{/required}}
+        type: {{#schema}}{{type}}{{/schema}}
+        desc: {{description}}
+{{/parameters}}
+{{#requestBody}}
+      - name: body
+        type: table
+{{/requestBody}}
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+{{#requestBody}}
+    examples:
+      - desc: |-
+              ```lua
+              {{requestBodyYamlExample}}
+              ```
+{{/requestBody}}
+{{/paths}}

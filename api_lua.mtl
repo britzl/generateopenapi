@@ -1,0 +1,73 @@
+local M = {}
+
+local SERVERS = {
+    {{#servers}}
+    "{{url}}",
+    {{/servers}}
+}
+
+{{#paths}}
+
+--- {{summary}}
+-- {{description}}
+-- @path {{path}}
+-- @name {{operationId}}
+{{#parameters}}
+-- @param {{name}} {{#required}}(REQUIRED) {{/required}}{{description}}
+{{/parameters}}
+{{#requestBody}}
+-- @param body
+{{/requestBody}}
+-- @param callback
+-- @param retry_policy
+-- @param cancellation_token
+{{#security}}
+-- @note {{description}}
+{{/security}}
+{{#requestBodyLuaExample}}
+-- @example Request body example
+{{{requestBodyLuaExample}}}
+{{/requestBodyLuaExample}}
+function M.{{operationId}}({{#parameters}}{{name}}, {{/parameters}}{{#requestBody}}body, {{/requestBody}}callback, retry_policy, cancellation_token)
+    {{#requestBody}}
+    assert(body)
+    {{/requestBody}}
+    {{#parameters}}
+    {{#required}}
+    assert({{name}})
+    {{/required}}
+    {{/parameters}}
+
+    local url_path = "{{ path }}"
+    {{#parameters}}
+    {{#inpath}}
+    url_path = url_path:gsub("%7B{{name}}%7D", uri.encode(tostring({{name}})))
+    {{/inpath}}
+    {{/parameters}}
+
+    local query_params = {}
+    {{#parameters}}
+    {{#inquery}}
+    query_params["{{name}}"] = {{name}}
+    {{/inquery}}
+    {{/parameters}}
+
+    local post_data = {{#requestBody}}json.encode(body){{/requestBody}}{{^requestBody}}nil{{/requestBody}}
+
+    local headers = {}
+    {{#requestBody}}
+    headers["Content-Type"] = "application/json"
+    {{/requestBody}}
+    {{#security}}
+    {{#basicAuth}}
+    headers["Authorization"] = authorization.basic
+    {{/basicAuth}}
+    {{/security}}
+
+    return http(callback, url_path, query_params, "{{method}}", headers, post_data, retry_policy, cancellation_token, function(result, err)
+        return result, err
+    end)
+end
+{{/paths}}
+
+return M

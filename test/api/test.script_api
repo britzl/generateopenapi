@@ -1,0 +1,4298 @@
+- name: test
+  type: table
+  desc: ECI Elements Core APIs
+
+  members:
+
+
+  - name: uploadAppleIapReceipt
+    type: function
+    desc: 
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getApplicationProfiles
+    type: function
+    desc: Searches application profiles
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getApplications
+    type: function
+    desc: Search Applications
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createApplication
+    type: function
+    desc: Creates a New Application
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getApplication
+    type: function
+    desc: Get an Application
+    parameters:
+      - name: nameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateApplication
+    type: function
+    desc: Updates an Application
+    parameters:
+      - name: nameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteApplication
+    type: function
+    desc: Deletes an Application
+    parameters:
+      - name: nameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createFacebookApplicationConfiguration
+    type: function
+    desc: Creates a new Facebook ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getFacebookApplicationConfiguration
+    type: function
+    desc: Gets a Facebook Application Configuration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateFacebookApplicationConfiguration
+    type: function
+    desc: Updates a Facebook ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteFacebookApplicationConfiguration
+    type: function
+    desc: Deletes a Facebook ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createFirebaseApplicationConfiguration
+    type: function
+    desc: Creates a new Firebase ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getFirebaseApplicationConfiguration
+    type: function
+    desc: Gets a Firebase Application Configuration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateFirebaseApplicationConfiguration
+    type: function
+    desc: Updates a Firebase ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteFirebaseApplicationConfiguration
+    type: function
+    desc: Deletes a Firebase ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createGooglePlayApplicationConfiguration
+    type: function
+    desc: Creates a new Google Play ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getGooglePlayApplicationConfiguration
+    type: function
+    desc: Gets a Google Play Application Configuration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateGooglePlayApplicationConfiguration
+    type: function
+    desc: Updates a Google Play ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteGooglePlayApplicationConfiguration
+    type: function
+    desc: Deletes a Google Play ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateProductBundleForApplicationConfiguration
+    type: function
+    desc: Updates the ProductBundle
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: createIosApplicationConfiguration
+    type: function
+    desc: Creates a new iOS ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getIosApplicationConfiguration
+    type: function
+    desc: Gets a iOS Application Configuration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateIosApplicationConfiguration
+    type: function
+    desc: Updates a iOS ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteIosApplicationConfiguration
+    type: function
+    desc: Deletes a iOS ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateProductBundleForApplicationConfiguration_1
+    type: function
+    desc: Updates the ProductBundle
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: createMatchmakingApplicationConfiguration
+    type: function
+    desc: Creates a new iOS ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getMatchmakingApplicationConfiguration
+    type: function
+    desc: Gets a iOS Application Configuration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateMatchmakingApplicationConfiguration
+    type: function
+    desc: Updates a iOS ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteMatchmakingApplicationConfiguration
+    type: function
+    desc: Deletes a iOS ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createPSNApplicationConfiguration
+    type: function
+    desc: Creates a new PSN ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getPSNApplicationConfiguration
+    type: function
+    desc: Gets a PSN Application Configuration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updatePSNApplicationConfiguration
+    type: function
+    desc: Updates a PSN ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deletePSNApplicationConfiguration
+    type: function
+    desc: Deletes a PSN ApplicationConfiguration
+    parameters:
+      - name: applicationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: applicationConfigurationNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getAuthSchemes
+    type: function
+    desc: Lists all auth schemes in the system
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: tags 
+        type: array
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createAuthScheme
+    type: function
+    desc: Creates a new Auth Scheme
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getAuthScheme
+    type: function
+    desc: Gets a specific Auth Scheme
+    parameters:
+      - name: authSchemeId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateAuthScheme
+    type: function
+    desc: Updates an Auth Scheme
+    parameters:
+      - name: authSchemeId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteAuthScheme
+    type: function
+    desc: Deletes an Auth Scheme
+    parameters:
+      - name: authSchemeId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createOAuth2Session
+    type: function
+    desc: Creates a Session using OAuth2
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getAuthSchemes_1
+    type: function
+    desc: Lists all auth schemes in the system
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: tags 
+        type: array
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createAuthScheme_1
+    type: function
+    desc: Creates a new Auth Scheme
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getAuthScheme_1
+    type: function
+    desc: Gets a specific Auth Scheme
+    parameters:
+      - name: oAuth2AuthSchemeId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateAuthScheme_1
+    type: function
+    desc: Updates an Auth Scheme
+    parameters:
+      - name: oAuth2AuthSchemeId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteAuthScheme_1
+    type: function
+    desc: Deletes an Auth Scheme
+    parameters:
+      - name: oAuth2AuthSchemeId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createOidcSession
+    type: function
+    desc: Creates a Session using OIDC
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getAuthSchemes_2
+    type: function
+    desc: Lists all auth schemes in the system
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: tags 
+        type: array
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createAuthScheme_2
+    type: function
+    desc: Creates a new Auth Scheme
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getAuthScheme_2
+    type: function
+    desc: Gets a specific Auth Scheme
+    parameters:
+      - name: oidcAuthSchemeId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateAuthScheme_2
+    type: function
+    desc: Updates an Auth Scheme
+    parameters:
+      - name: oidcAuthSchemeId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteAuthScheme_2
+    type: function
+    desc: Deletes an Auth Scheme
+    parameters:
+      - name: oidcAuthSchemeId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getSmartContracts
+    type: function
+    desc: Gets  contracts.
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: api 
+        type: string
+        desc: 
+      - name: network 
+        type: array
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createSmartContract
+    type: function
+    desc: Patches a  Smart Contract
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getSmartContract
+    type: function
+    desc: Gets a specific  Smart Contract
+    parameters:
+      - name: contractId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateSmartContract
+    type: function
+    desc: Patches a  Smart Contract
+    parameters:
+      - name: contractId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteContract
+    type: function
+    desc: Deletes a  Smart Contract
+    parameters:
+      - name: contractId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getVaults
+    type: function
+    desc: Gets  vaults. Optionally filtered for a specific user
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: userId 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createVault
+    type: function
+    desc: Creates a new  Vault
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getVault
+    type: function
+    desc: Gets a specific  Vault
+    parameters:
+      - name: vaultId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateVault
+    type: function
+    desc: Updates a  Vault
+    parameters:
+      - name: vaultId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteVault
+    type: function
+    desc: Deletes a  Vault
+    parameters:
+      - name: vaultId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getWallets
+    type: function
+    desc: Gets  wallets. Optionally filtered for a specific user
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: userId 
+        type: string
+        desc: 
+      - name: api 
+        type: string
+        desc: 
+      - name: network 
+        type: array
+        desc: 
+      - name: vaultId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createWallet
+    type: function
+    desc: Creates a new  Wallet
+    parameters:
+      - name: vaultId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getWallet
+    type: function
+    desc: Gets a specific  Wallet
+    parameters:
+      - name: vaultId (REQUIRED)
+        type: string
+        desc: 
+      - name: walletId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateWallet
+    type: function
+    desc: Updates a  Wallet
+    parameters:
+      - name: vaultId (REQUIRED)
+        type: string
+        desc: 
+      - name: walletId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteWallet
+    type: function
+    desc: Deletes a  Wallet
+    parameters:
+      - name: vaultId (REQUIRED)
+        type: string
+        desc: 
+      - name: walletId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getWallet_1
+    type: function
+    desc: Gets a specific  Wallet
+    parameters:
+      - name: walletId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getDeployments
+    type: function
+    desc: 
+    parameters:
+      - name: applicationId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createNewDeployment
+    type: function
+    desc: 
+    parameters:
+      - name: applicationId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getDeployment
+    type: function
+    desc: 
+    parameters:
+      - name: applicationId (REQUIRED)
+        type: string
+        desc: 
+      - name: deploymentId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: deleteDeployment
+    type: function
+    desc: 
+    parameters:
+      - name: applicationId (REQUIRED)
+        type: string
+        desc: 
+      - name: deploymentId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getCurrentDeployment
+    type: function
+    desc: 
+    parameters:
+      - name: applicationId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateDeployment
+    type: function
+    desc: 
+    parameters:
+      - name: applicationId (REQUIRED)
+        type: string
+        desc: 
+      - name: version (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: generateCode
+    type: function
+    desc: Generate Client API Code
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getFollowers
+    type: function
+    desc: Search Followers
+    parameters:
+      - name: profileId (REQUIRED)
+        type: string
+        desc: 
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getFollowers_1
+    type: function
+    desc: Search Followers
+    parameters:
+      - name: profileId (REQUIRED)
+        type: string
+        desc: 
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createFollower
+    type: function
+    desc: Creates a Follower relationship between two profiles.
+    parameters:
+      - name: profileId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteFollower
+    type: function
+    desc: Deletes a Follower relationship
+    parameters:
+      - name: profileId (REQUIRED)
+        type: string
+        desc: 
+      - name: profileToUnfollowId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getFollower
+    type: function
+    desc: Gets a specific profile using the ID of the profile and followed id.
+    parameters:
+      - name: profileId (REQUIRED)
+        type: string
+        desc: 
+      - name: followedId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getFriend
+    type: function
+    desc: Gets a Specific Friend
+    parameters:
+      - name: friendId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: deleteFriendRegistration
+    type: function
+    desc: Deletes a Friend
+    parameters:
+      - name: friendId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getFriends
+    type: function
+    desc: Search Friends
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getItems
+    type: function
+    desc: Retrieves all Items
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: tags 
+        type: array
+        desc: 
+      - name: category 
+        type: string
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createItem
+    type: function
+    desc: Creates a new digital Item
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getItemByIdentifier
+    type: function
+    desc: Retrieves a single Item by id or by name
+    parameters:
+      - name: identifier (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateItem
+    type: function
+    desc: Updates a single Item
+    parameters:
+      - name: identifier (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteSimpleInventoryItem
+    type: function
+    desc: Delete the item as identified by the given item name/id
+    parameters:
+      - name: identifier (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: uploadGooglePlayIapPurchase
+    type: function
+    desc: Upload Google Play IAP Receipt data (package name, product id and Google Play-issued purchase token). Returns a list of RewardIssuances, some or all of which may be already redeemed.
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: buildIndexes
+    type: function
+    desc: Builds all indexes.
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getPlans
+    type: function
+    desc: Gets all index plans.
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getAdvancedInventoryItem
+    type: function
+    desc: Gets inventory item for the specified item
+    parameters:
+      - name: inventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateSimpleInventoryItem
+    type: function
+    desc: Updates an inventory item for the specified item
+    parameters:
+      - name: inventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteAdvancedInventoryItem
+    type: function
+    desc: Delete the inventory item as identified by the given item name/id
+    parameters:
+      - name: inventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: adjustAdvancedInventoryItemQuantity
+    type: function
+    desc: Adjust the quantity of the inventory item for the specified item.
+    parameters:
+      - name: inventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getAdvancedInventoryItems
+    type: function
+    desc: Search inventory items
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: userId 
+        type: string
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createAdvancedInventoryItem
+    type: function
+    desc: Create an inventory item for the specified item
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getDistinctInventoryItems
+    type: function
+    desc: Search inventory items
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: userId 
+        type: string
+        desc: 
+      - name: profileId 
+        type: string
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createDistinctInventoryItem
+    type: function
+    desc: Create an inventory item for the specified item
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: updateDistinctInventoryItem
+    type: function
+    desc: Updates an inventory item for the specified item
+    parameters:
+      - name: distinctInventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteDistinctInventoryItem
+    type: function
+    desc: Delete the inventory item as identified by the given item name/id
+    parameters:
+      - name: distinctInventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getDistinctInventoryItem
+    type: function
+    desc: Gets inventory item for the specified item
+    parameters:
+      - name: inventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getSimpleInventoryItem
+    type: function
+    desc: Gets inventory item for the specified item
+    parameters:
+      - name: inventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateSimpleInventoryItem_1
+    type: function
+    desc: Updates an inventory item for the specified item
+    parameters:
+      - name: inventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteSimpleInventoryItem_1
+    type: function
+    desc: Delete the inventory item as identified by the given item name/id
+    parameters:
+      - name: inventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: adjustSimpleInventoryItemQuantity
+    type: function
+    desc: Adjust the quantity of the inventory item for the specified item.
+    parameters:
+      - name: inventoryItemId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getSimpleInventoryItems
+    type: function
+    desc: Search inventory items
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: userId 
+        type: string
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createSimpleInventoryItem
+    type: function
+    desc: Create an inventory item for the specified item
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getMatchedUserProfilesWithPhoneNumbers
+    type: function
+    desc: Match normalized phone numbers with requested list
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: createLargeObject
+    type: function
+    desc: Creates a LargeObject with content
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getLargeObjects
+    type: function
+    desc: Get a LargeObject
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createLargeObject_1
+    type: function
+    desc: Creates a LargeObject
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: createLargeObjectFromUrl
+    type: function
+    desc: Creates a LargeObject from provided URL
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getLargeObject
+    type: function
+    desc: Get a LargeObject
+    parameters:
+      - name: largeObjectId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateLargeObject
+    type: function
+    desc: Updates a LargeObject
+    parameters:
+      - name: largeObjectId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteLargeObject
+    type: function
+    desc: Deletes a LargeObject
+    parameters:
+      - name: largeObjectId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateLargeObjectContents
+    type: function
+    desc: Updates a LargeObject content
+    parameters:
+      - name: largeObjectId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getLeaderboards
+    type: function
+    desc: Search Leaderboards
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createLeaderboard
+    type: function
+    desc: Creates a New Leaderboard
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getLeaderboard
+    type: function
+    desc: Get an Leaderboard
+    parameters:
+      - name: nameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateLeaderboard
+    type: function
+    desc: Updates an Leaderboard
+    parameters:
+      - name: nameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteLeaderboard
+    type: function
+    desc: Deletes an Leaderboard
+    parameters:
+      - name: nameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getGlobalRankTabular
+    type: function
+    desc: Gets Rank Among all Players
+    parameters:
+      - name: leaderboardNameOrId (REQUIRED)
+        type: string
+        desc: Specifies the leaderboard name or ID.
+      - name: leaderboardEpoch 
+        type: integer
+        desc: Specifies the epoch for the leaderboard. If not provided, the current epoch will be used by default for epochal leaderboards. This value will be ignored for all-time leaderboards. Set this value to 0 to explicitly reference the current epoch (when applicable).
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getRankAmongFriends
+    type: function
+    desc: Gets Rank among Friends
+    parameters:
+      - name: offset 
+        type: integer
+        desc: May be negative to place the requested player in the middle of the page.
+      - name: count 
+        type: integer
+        desc: The number of results to return in the page.
+      - name: relative 
+        type: boolean
+        desc: Indicates whether or not to fetch results in a relative fashion.
+      - name: leaderboardEpoch 
+        type: integer
+        desc: Specifies the epoch for the leaderboard. If no value is provided, the current epoch will befetched.
+      - name: leaderboardNameOrId (REQUIRED)
+        type: string
+        desc: Specifies the leaderboard name or ID.
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getRankAmongMutualFollowers
+    type: function
+    desc: Gets Rank among Mutual Followers
+    parameters:
+      - name: offset 
+        type: integer
+        desc: May be negative to place the requested player in the middle of the page.
+      - name: count 
+        type: integer
+        desc: The number of results to return in the page.
+      - name: relative 
+        type: boolean
+        desc: Indicates whether or not to fetch results in a relative fashion.
+      - name: leaderboardEpoch 
+        type: integer
+        desc: Specifies the epoch for the leaderboard. If no value is provided, the current epoch will befetched.
+      - name: leaderboardNameOrId (REQUIRED)
+        type: string
+        desc: Specifies the leaderboard name or ID.
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createScore
+    type: function
+    desc: Creates a New Score
+    parameters:
+      - name: leaderboardNameOrId (REQUIRED)
+        type: string
+        desc: The name or id of the leaderboard.
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getMatches
+    type: function
+    desc: List Matches
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createMatch
+    type: function
+    desc: Creates a Match
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getMatch
+    type: function
+    desc: Gets a Specific Match
+    parameters:
+      - name: matchId (REQUIRED)
+        type: string
+        desc: 
+      - name: SocialEngine_LongPoll_Timeout 
+        type: integer
+        desc: The maximum amount time the server will wait until a request returns a default set of data for long polling.  Specifying a zero will request that the server wait indefinitely until responding.  Though, the server may enforce a practical upper limit on the amount of time it takes to return.  Omitting this header will prompt the server to treat the request as a normal request.
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: deleteMatch
+    type: function
+    desc: Deletes a Match
+    parameters:
+      - name: matchId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getMatches_1
+    type: function
+    desc: List MultiMatches
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createMatch_1
+    type: function
+    desc: Creates a MultiMatch
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteAllMatches
+    type: function
+    desc: Deletes a MultiMatch
+    parameters:
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getMatch_1
+    type: function
+    desc: Gets a Specific MultiMatch
+    parameters:
+      - name: matchId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateMatch
+    type: function
+    desc: Updates a MultiMatch
+    parameters:
+      - name: matchId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteMatch_1
+    type: function
+    desc: Deletes a MultiMatch
+    parameters:
+      - name: matchId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getMetadataObjects
+    type: function
+    desc: Search Metadata
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createMetadata
+    type: function
+    desc: Creates a new Metadata object
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getMetadataObject
+    type: function
+    desc: Gets a specific Metadata object
+    parameters:
+      - name: id (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateMetadata
+    type: function
+    desc: Updates a specific Metadata object
+    parameters:
+      - name: id (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteMetadata
+    type: function
+    desc: Deletes a specific Metadata object
+    parameters:
+      - name: id (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getMissions
+    type: function
+    desc: Search Missions
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: tags 
+        type: array
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createMission
+    type: function
+    desc: Creates a new mission
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getMissionByNameOrId
+    type: function
+    desc: Retrieves a single Mission by id or by name
+    parameters:
+      - name: missionNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateMission
+    type: function
+    desc: Updates an entire single Mission
+    parameters:
+      - name: missionNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteMission
+    type: function
+    desc: Deletes the Mission identified by id or by name
+    parameters:
+      - name: missionNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getProgressTabular
+    type: function
+    desc: Gets Rank Among all Players
+    parameters:
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createProgress
+    type: function
+    desc: Creates a new progress
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteProgress
+    type: function
+    desc: Deletes the Progress identified by id
+    parameters:
+      - name: progressId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getProgressByNameOrId
+    type: function
+    desc: Retrieves a single Progress by id
+    parameters:
+      - name: progressId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateProgress
+    type: function
+    desc: Updates a single Progress
+    parameters:
+      - name: progressId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getRewardIssuance
+    type: function
+    desc: Retrieves a single RewardIssuance by id.
+    parameters:
+      - name: rewardIssuanceId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getRewardIssuances
+    type: function
+    desc: Retrieves the current user&#x27;s reward issuances, optionally filtered by the given state.
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: states 
+        type: array
+        desc: 
+      - name: tags 
+        type: array
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: redeemRewardIssuance
+    type: function
+    desc: Redeems the RewardIssuance.
+    parameters:
+      - name: rewardIssuanceId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: redeemRewardIssuances
+    type: function
+    desc: Redeems the given list of RewardIssuances.
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getScheduleEvents
+    type: function
+    desc: Search ScheduleEvents
+    parameters:
+      - name: scheduleNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: tags 
+        type: array
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createScheduleEvent
+    type: function
+    desc: Creates a new schedule
+    parameters:
+      - name: scheduleNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getScheduleEventByNameOrId
+    type: function
+    desc: Retrieves a single ScheduleEvent by id or by name
+    parameters:
+      - name: scheduleNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: scheduleEventId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateScheduleEvent
+    type: function
+    desc: Updates an entire single ScheduleEvent
+    parameters:
+      - name: scheduleNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: scheduleEventId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteScheduleEvent
+    type: function
+    desc: Deletes the ScheduleEvent identified by id or by name
+    parameters:
+      - name: scheduleNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: scheduleEventId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getScheduleProgresses
+    type: function
+    desc: Gets all Progresses assigned via this schedule
+    parameters:
+      - name: scheduleNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: tags 
+        type: array
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getSchedules
+    type: function
+    desc: Search Schedules
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: tags 
+        type: array
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createSchedule
+    type: function
+    desc: Creates a new schedule
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getScheduleByNameOrId
+    type: function
+    desc: Retrieves a single Schedule by id or by name
+    parameters:
+      - name: scheduleNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateSchedule
+    type: function
+    desc: Updates an entire single Schedule
+    parameters:
+      - name: scheduleNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteSchedule
+    type: function
+    desc: Deletes the Schedule identified by id or by name
+    parameters:
+      - name: scheduleNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createFCMRegistration
+    type: function
+    desc: Creates an FCM Registration Token
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: updateRegistration
+    type: function
+    desc: Update an FCM Registration Token
+    parameters:
+      - name: fcmRegistrationId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteFCMRegistration
+    type: function
+    desc: 
+    parameters:
+      - name: fcmRegistrationId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getProfiles
+    type: function
+    desc: Search Profiles
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: before 
+        type: integer
+        desc: 
+      - name: after 
+        type: integer
+        desc: 
+      - name: application 
+        type: string
+        desc: 
+      - name: user 
+        type: string
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createProfile
+    type: function
+    desc: Creates a Profile
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: updateProfile
+    type: function
+    desc: Updates a Profile
+    parameters:
+      - name: profileId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deactivateProfile
+    type: function
+    desc: Deletes a Profile
+    parameters:
+      - name: profileId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getCurrentProfile
+    type: function
+    desc: Gets the current Profile
+    parameters:
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getProfile
+    type: function
+    desc: Gets a Specific Profile
+    parameters:
+      - name: name (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateProfileImage
+    type: function
+    desc: Updates a Profile image object
+    parameters:
+      - name: profileId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getSaveDataDocuments
+    type: function
+    desc: Search Save Data Documents
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: userId 
+        type: string
+        desc: 
+      - name: profileId 
+        type: string
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createSaveDocument
+    type: function
+    desc: Creates a save data document.
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: updateSaveDocument
+    type: function
+    desc: Creates a save data document.
+    parameters:
+      - name: saveDataDocumentId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteSaveDocument
+    type: function
+    desc: Deletes a save data document
+    parameters:
+      - name: saveDataDocumentId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getProfileSaveDataDocumentBySlot
+    type: function
+    desc: Get save data document.
+    parameters:
+      - name: profileId (REQUIRED)
+        type: string
+        desc: 
+      - name: slot (REQUIRED)
+        type: integer
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getSaveDataDocument
+    type: function
+    desc: Get save data document.
+    parameters:
+      - name: id (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getUserSaveDataDocumentBySlot
+    type: function
+    desc: Get save data document.
+    parameters:
+      - name: userId (REQUIRED)
+        type: string
+        desc: 
+      - name: slot (REQUIRED)
+        type: integer
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getMetadataSpecs
+    type: function
+    desc: Get Metadata Specs
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createMetadataSpec
+    type: function
+    desc: Creates a new Metadata Spec definition
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: updateMetadataSpec
+    type: function
+    desc: Updates a Metadata Spec
+    parameters:
+      - name: metadataSpecId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: deleteMetadataSpec
+    type: function
+    desc: Deletes a MetadataSpec
+    parameters:
+      - name: metadataSpecId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getEditorSchema
+    type: function
+    desc: Gets a specific Metadata Editor Schema
+    parameters:
+      - name: metadataSpecName (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getJsonSchema
+    type: function
+    desc: Gets a specific JSON Schema
+    parameters:
+      - name: metadataSpecName (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getMetadataSpec
+    type: function
+    desc: Gets a specific Metadata Spec
+    parameters:
+      - name: metadataSpecNameOrId (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createMockSession
+    type: function
+    desc: Creates a Mock Session
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: blacklistSession
+    type: function
+    desc: Destroys the Session
+    parameters:
+      - name: sessionSecret (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createUsernamePasswordSession
+    type: function
+    desc: Creates a Session
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getAllApplicationStatuses
+    type: function
+    desc: Gets the status of all applications.
+    parameters:
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getServerHealth
+    type: function
+    desc: Performs the health check.
+    parameters:
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getAllInstalledElements
+    type: function
+    desc: Gets the status of all applications.
+    parameters:
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getVersion
+    type: function
+    desc: Show Server Version Information
+    parameters:
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: signUpUser
+    type: function
+    desc: Sign Up a User
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getUsers
+    type: function
+    desc: Search Users
+    parameters:
+      - name: offset 
+        type: integer
+        desc: 
+      - name: count 
+        type: integer
+        desc: 
+      - name: search 
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: createUser
+    type: function
+    desc: Creates a User
+    parameters:
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: getUser
+    type: function
+    desc: Gets a Specific User
+    parameters:
+      - name: name (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: deactivateUser
+    type: function
+    desc: Deletes a User
+    parameters:
+      - name: name (REQUIRED)
+        type: string
+        desc: 
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: getCurrentUser
+    type: function
+    desc: Gets the current User
+    parameters:
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+
+  - name: updateUser
+    type: function
+    desc: Updates a User
+    parameters:
+      - name: userId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
+
+  - name: updateUserPassword
+    type: function
+    desc: Updates a User&#x27;s Password
+    parameters:
+      - name: userId (REQUIRED)
+        type: string
+        desc: 
+      - name: body
+        type: table
+      - name: callback
+        type: function
+        desc: Optional callback function
+      - name: retry_policy
+        type: table
+        desc: Optional retry policy
+      - name: cancellation_token
+        type: table
+        desc: Optional cancellation token
+    examples:
+      - desc: |-
+              ```lua
+              
+              ```
