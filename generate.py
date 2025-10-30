@@ -147,35 +147,41 @@ def expand(v, api):
     elif not is_primitive_type(v["type"]):
         error("Unable to expand", v["type"])
 
-def property_to_example(prop, api, depth = 1):
+def property_to_example(prop, api, cache = {}):
+    # avoid cyclic references by only including a property once
+    prop_id = prop.get("id")
+    if prop_id:
+        if prop_id in cache:
+            return None
+        cache[prop_id] = True
+
     example = None
-    if depth < 10:
-        if prop["type"] == "string":
-            example = prop.get("example", prop.get("description", ""))
-        elif prop["type"] == "boolean":
-            example = prop.get("example", True)
-        elif prop["type"] == "number":
-            example = prop.get("example", 123.456)
-        elif prop["type"] == "integer":
-            example = prop.get("example", 123)
-        elif prop["type"] == "oneof":
-            example = property_to_example(prop["oneOf"][0], api, depth + 1)
-        elif prop["type"] == "array":
-            example = []
-            example.append(property_to_example(prop["items"], api, depth + 1))
-        elif prop["type"] == "object":
-            example = {}
-            properties = prop.get("properties", {})
-            if isinstance(properties, list):
-                for p in properties:
-                    example[p["id"]] = property_to_example(p, api, depth + 1)
-            else:
-                for prop_id in properties:
-                    p = prop["properties"][prop_id]
-                    example[prop_id] = property_to_example(p, api, depth + 1)
+    if prop["type"] == "string":
+        example = prop.get("example", prop.get("description", ""))
+    elif prop["type"] == "boolean":
+        example = prop.get("example", True)
+    elif prop["type"] == "number":
+        example = prop.get("example", 123.456)
+    elif prop["type"] == "integer":
+        example = prop.get("example", 123)
+    elif prop["type"] == "oneof":
+        example = property_to_example(prop["oneOf"][0], api, cache)
+    elif prop["type"] == "array":
+        example = []
+        example.append(property_to_example(prop["items"], api, cache))
+    elif prop["type"] == "object":
+        example = {}
+        properties = prop.get("properties", {})
+        if isinstance(properties, list):
+            for p in properties:
+                example[p["id"]] = property_to_example(p, api, cache)
         else:
-            print("Unknown type", prop["type"])
-            sys.exit(4)
+            for prop_id in properties:
+                p = prop["properties"][prop_id]
+                example[prop_id] = property_to_example(p, api, cache)
+    else:
+        print("Unknown type", prop["type"])
+        sys.exit(4)
     return example
 
 def process_paths(api):
@@ -241,7 +247,7 @@ def process_paths(api):
                 schema = data["requestBody"]["content"][media_type]["schema"]
                 if media_type == "application/json":
                     if "example" not in schema:
-                        schema["example"] = property_to_example(schema, api)
+                        schema["example"] = property_to_example(schema, api, cache = {})
                     data["requestBodyLuaExample"] = tolua(schema["example"], "-- ", "\n").strip()
                     data["requestBodyYamlExample"] = urllib.parse.quote(tolua(schema["example"], "              ", "\n").strip())
 
