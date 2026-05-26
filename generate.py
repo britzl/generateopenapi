@@ -204,14 +204,19 @@ def process_paths(api):
     # convert security schemes
     # https://swagger.io/docs/specification/v3_0/authentication/#describing-security
     for data in api["paths"]:
+        security_ids = []
+        security_ids.extend(api.get("security", {}))
+        security_ids.extend(data.get("security", {}))
+
         security = []
-        for scheme in data.get("security", {}):
+        for scheme in security_ids:
             for scheme_id in scheme:
-                security.append({
-                    scheme_id: True,
-                    "scheme": scheme_id,
-                    "description": cleanstring_multiline(api["components"]["securitySchemes"][scheme_id]["description"])
-                })
+                security_scheme = {}
+                security_scheme.update(api["components"]["securitySchemes"][scheme_id].copy())
+                security_scheme[scheme_id] = True
+                security_scheme[security_scheme["type"] + security_scheme.get("in")] = True
+                security_scheme["description"] = cleanstring_multiline(security_scheme.get("description", ""))
+                security.append(security_scheme)
         data["security"] = security
 
     # convert response codes to list
